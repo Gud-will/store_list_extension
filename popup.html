@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link and Note Manager</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 300px; }
+    .section { margin-bottom: 20px; }
+    .list { list-style: none; padding: 0; }
+    .list-item { margin-bottom: 10px; }
+    button { margin-left: 5px; }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h3>Create Group</h3>
+    <input type="text" id="groupInput" placeholder="Enter group name">
+    <button id="addGroupButton">Add Group</button>
+  </div>
+  <div class="section">
+    <h3>Groups</h3>
+    <ul id="groupList" class="list"></ul>
+  </div>
+  <div class="section">
+    <h3>Add Link to Group</h3>
+    <select id="groupSelect"></select>
+    <input type="text" id="linkInput" placeholder="Enter link">
+    <button id="addLinkButton">Add Link</button>
+  </div>
+  <div class="section">
+    <h3>Add Note to Group</h3>
+    <select id="noteGroupSelect"></select>
+    <textarea id="noteInput" placeholder="Enter note"></textarea>
+    <button id="addNoteButton">Add Note</button>
+  </div>
+  <div class="section">
+    <h3>Links and Notes in Group</h3>
+    <select id="viewGroupSelect"></select>
+    <ul id="itemList" class="list"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
